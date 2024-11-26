@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techess Code - Innovación en Desarrollo de Software</title>
+    <link rel="stylesheet" href="stylesIdx.css">
+</head>
+<body style="background-image: linear-gradient(to right, #2072a4 0%, #301d75 100%);">
+    <header>
+        <nav>
+            <div class="container" class="container-nav-menu">
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html"><img src="logoPeq.png" alt="Techess Code Logo" class="logo"></a></li>
+                    <li><a href="aboutUs.html">Nosotros</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="clients.html">Clientes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="contact_form">
+            <h2 style="color: #301d75 ; text-align: center;">CONTÁCTANOS</h2>
+            <form action="submeter-formulario.php" method="post">       
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>           
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>                  
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logoPeq.png" alt="Techess Code Logo" width="450px" height="80px"> 
+                </div>
+                <ul class="footer-menu">
+                    <li>8715682991</li>
+                    <li>paulina161104@gmail.com</li>
+                    <li>Torreón, Coah</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Techess Code. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

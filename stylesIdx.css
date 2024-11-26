@@ -1,0 +1,322 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    color: #333; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(to right, #2072a4 0%, #301d75 100%);
+    opacity: 0.9;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+}
+
+nav .logo {
+    height: 50px;
+    justify-content: flex-start;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+}
+
+.nav-menu li {
+    margin: 0 0px;
+    
+}
+
+.nav-menu a {
+    text-decoration: solid;
+    color: white; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #a5cada; 
+}
+
+
+.container-nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0px;
+    position: fixed;
+}
+
+#home {
+    background: url('Desarrollo-de-Software-Diseno-Integracion-y-Despliegue-continuos.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 190px 0;
+    height: 300px;
+    text-align: center;
+    color: white;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+#home h1, #home p, .cta-button {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #c2b1e9;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #5728c6;
+}
+
+.services-section {
+    padding: 80px 0;
+    color: #333; 
+    opacity: 1;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.services-grid-aboutUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 100%;
+}
+.service-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 10px 10px rgba(7, 56, 111, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.service-item img {
+    max-width: 100%;
+    border-radius: 100px;
+}
+
+.service-item h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #0A58CA; 
+}
+
+.about-section {
+    padding: 80px 0;
+    color: white; 
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.service-item:hover {
+    opacity: 1;
+}
+
+.services-grid:hover .service-item {
+    opacity: 0.8;
+}
+
+.services-grid .service-item:hover {
+    opacity: 1;
+}
+
+.services-grid-aboutUs:hover .service-item {
+    opacity: 0.8;
+}
+
+.services-grid-aboutUs .service-item:hover {
+    opacity: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 0px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: 300px;
+    justify-content: flex-start;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #222;
+}
+
+
+/* CONTACT */ 
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px;  
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #0A58CA; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #0A58CA; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color:#0A58CA; 
+  border-color:#0A58CA; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #0A58CA; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
