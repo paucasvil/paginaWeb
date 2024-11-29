@@ -328,10 +328,19 @@ span{
 /* Sección "Quiénes Somos" */
 .about-us-section {
     background-image: linear-gradient(to right, #2072a4 0%, #301d75 100%);    
-    opacity: 0.9;
-    
+    opacity: 0.9;    
     padding: 50px 0;
     text-align: center;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+    justify-content: center;
+    text-align: center; /* Centra el texto */
+    max-width: 850px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor dentro de la sección */
 }
 
 .about-us-section h2 {
@@ -374,6 +383,14 @@ span{
     line-height: 1.6;
     color: #fff;
     margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    max-width: 850px; 
+    margin: 0 auto; 
 }
 .map-container {
     margin-top: 20px;
@@ -386,4 +403,76 @@ span{
 iframe {
     border: none;
     border-radius: 10px;
+}
+
+
+/* Sección "Nuestros Proyectos" */
+.about-section {
+    padding: 50px 0;
+    background-image: linear-gradient(to right, #2072a4 0%, #301d75 100%);    
+    text-align: center;
+}
+
+.about-section p{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+    justify-content: center;
+    text-align: center; /* Centra el texto */
+    max-width: 850px; /* Limita el ancho máximo */
+    margin: 0 auto; 
+}
+
+.projects-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-item {
+    width: 100%;
+    max-width: 400px; /* Controla el tamaño de las imágenes */
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 250px; /* Hace que las imágenes sean grandes, pero no desbordadas */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra para un toque más atractivo */
+    transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+    transform: scale(1.05); /* Efecto hover para ampliar ligeramente la imagen */
+}
+
+.project-item p {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fbfbfb;
+}
+
+/* Estilo para alternar el contenido hacia la izquierda o derecha */
+.project-item.left {
+    align-self: flex-start; /* Alinea la imagen a la izquierda */
+}
+
+.project-item.right {
+    align-self: flex-end; /* Alinea la imagen a la derecha */
+}
+
+@media (max-width: 768px) {
+    .projects-images {
+        flex-direction: column; /* En pantallas más pequeñas, las imágenes se apilan verticalmente */
+        align-items: center;
+    }
+
+    .project-item {
+        width: 80%; /* Aumenta el tamaño en pantallas pequeñas */
+    }
 }
